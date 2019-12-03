@@ -4,8 +4,14 @@
 
 //GLOBAL VARIABLES
 /* global $ */
+
 $("shoot").click(function(){
     let choice= $("#input").val();
+    let computerChoice = ["rock" , "paper" ,"scissors"];
+    
+    if(choice === rock && computerChoice === paper){
+        $("shoot").html("You Lose!");
+ }
     
 });
 
